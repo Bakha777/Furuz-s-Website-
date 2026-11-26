@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">My Portfolio</h1>
+
+            <div class="link">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contacts">Contacts</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About me</h2>
+            <p>Hi, im sasha. Im an it manager.I live in boston.</p>
+            <figure>
+                <img src="profile.jpg" alt="Autors profile photo">
+                <figcaption>My photo</figcaption>
+            </figure>
+        </section>
+
+        <section id="projects">
+            <div class="card myprojects">
+                <h2>My Projects</h2>
+            </div>
+
+            <div class="card html">
+                <article>
+                    <h3>HTML from beggining</h3>
+                    <p>
+                        Here i teach html from zero and if you dont know anything about that language you can learn from here.
+                    </p>
+                </article>
+            </div>
+            
+            <div class="card css">
+                <article>
+                    <h3>CSS from beggining</h3>
+                    <p>
+                        Here i teach css from zero and if you dont know anything about that language you can learn from here.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <form>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Your Name"
+                >
+
+                <textarea
+                    id="message"
+                    rows="4"
+                    cols="15"
+                    placeholder="Your thoughts..."
+                ></textarea>
+                <button class="btn">Send</button>
+            </form>
+        </section>
+
+        <audio
+            src="audio.mp3"
+            controls
+        >
+        </audio>
+        
+        <video
+            src="video.mp4"
+            width="500"
+            poster="preview.jpg"
+            controls
+        >
+        </video>
+    </main>
+
+    <footer>
+        <p>&copy;2026 My Portfolio</p>
+    </footer>
+</body>
+</html>

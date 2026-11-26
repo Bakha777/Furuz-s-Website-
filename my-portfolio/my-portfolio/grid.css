@@ -1,0 +1,27 @@
+.layout {
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 1fr 60px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}

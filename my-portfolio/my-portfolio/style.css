@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #c8a764;
+    color: #2e2a26;
+}
+
+
+
+
+header {
+    background-color: #ece7e0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.link {
+    display: flex;
+    gap: 15px;
+}
+
+
+.link a {
+    text-decoration: none;
+    color: white;
+    background-color: #d98a3d;
+
+    padding: 12px 20px;
+    border-radius: 8px;
+
+    transition:
+        background-color 0.3s,
+        transform 0.3s;
+}
+
+
+.link a:hover {
+    background-color: #b8712c;
+    transform: scale(1.1);
+}
+
+
+.link a:active {
+    background-color: #77410b99;
+    transform: scale(0.95);
+}
+
+
+h1 {
+    color: #1f3a5f;
+    font-size: 42px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+p {
+    font-size: 18px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+
+.card p {
+    font-style: italic;
+}
+
+
+
+#about {
+    padding: 15px 10px;
+    background-color: #ece7e0;
+    margin: 25px;
+    border-radius: 10px;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+
+#about:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+.btn {
+    background-color: #d98a3d;
+    color: white;
+
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+
+    transition:
+        background-color 0.3s,
+        transform 0.3s;
+}
+
+
+.btn:hover {
+    background-color: #cd7823;
+    transform: scale(1.1);
+}
+
+
+.btn:active {
+    background-color: #77410b99;
+    transform: scale(0.95);
+}
+
+
+
+
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+
+
+
+.card {
+    display: flex;
+
+    width: 570px;
+    padding: 15px;
+
+    background-color: #ece7e0;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s,
+        border-radius 0.3s;
+}
+
+
+
+
+
+.myprojects:hover {
+
+    transform:
+        translateY(-10px)
+        scale(1.05);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.3),
+        -10px 5px 20px rgba(0,0,0,0.3),
+        10px 5px 20px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+.html:hover {
+
+    transform: scale(1.05);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.8);
+}
+
+.css:hover {
+
+    transform:
+        translateY(10px)
+        scale(1.05);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 -10px 20px rgba(0,0,0,0.3),
+        -10px 0 20px rgba(0,0,0,0.3),
+        10px 0 20px rgba(0,0,0,0.3);
+}
