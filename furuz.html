@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furuz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/furuz.html" title="Главная страница Furuz">
+                    <img src="images/Component 1.png" alt="Логотип Furuz">
+                </a>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li><a href="#about-us">О нас</a></li>
+                    <li><a href="#vacancy">Вакансии</a></li>
+                    <li><a href="#academy">Академия</a></li>
+                    <li><a href="#offices">Офисы и банкоматы</a></li>
+                </ul>
+            </nav>
+            <nav class="language-nav">
+                <ul class="language-nav__list">
+                    <li><a href="#russian">Русский</a></li>
+                    <li><a href="#tajik">Тоҷикӣ</a></li>
+                    <li><a href="#english">English</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li><a href="#credits">Кредиты</a></li>
+                <li><a href="#deposits">Вклады</a></li>
+                <li><a href="#cards">Карты</a></li>
+                <li><a href="#furuzpay">FuruzPay</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#more">Ещё</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- БАННЕР -->
+        <section class="banner">
+            <div class="banner__content">
+                <h1 class="banner__title">
+                    FuruzPay — всё, что нужно от банка, в одном приложении
+                </h1>
+                <p class="banner__description">
+                    Мобильное банковское приложение, созданное для
+                    <br>
+                    управления финансами безопасно, просто
+                    <br>
+                    и всегда под рукой
+                </p>
+                <button class="banner__button" type="button">
+                    Подробнее
+                </button>
+            </div>
+
+            <div class="banner__image">
+                <img
+                    src="images/mockup-Photoroom 1.png"
+                    alt="FuruzPay — мобильное банковское приложение"
+                >
+            </div>
+        </section>
+
+        <!-- ПОПУЛЯРНЫЕ ПРОДУКТЫ -->
+        <section class="popular-products">
+            <h2 class="popular-products__title">
+                Популярные продукты
+            </h2>
+            <div class="popular-products__list">
+
+                <!-- КАРТОЧКА ДЕПОЗИТА -->
+                <article class="product-card product-card--deposit">
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">
+                            Вклад со ставкой до 19,1%
+                        </h3>
+                        <p class="product-card__description">
+                            Удобные сроки с отличным доходом!
+                        </p>
+                    
+                        <button class="product-card__button" type="button">
+                            Подробнее
+                        </button>
+                    </div>
+
+                    <div class="product-card__image">
+                        <img
+                            src="images/6d524888130d2614281e66a0fe5a9d93a70d2146.png"
+                            alt="Вклад"
+                        >
+                    </div>
+                </article>
+
+                <!-- КАРТОЧКА КРЕДИТА -->
+                <article class="product-card product-card--credit">
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">
+                            Денежный кредит до 25 тысяч сомони
+                        </h3>
+                        <p class="product-card__description">
+                            Минимум документов,
+                            быстрое решение,
+                            возможность вернуть все проценты
+                        </p>
+                        <button class="product-card__button" type="button">
+                            Подробнее
+                        </button>
+                    </div>
+
+                    <div class="product-card__image">
+                        <img
+                            src="images/6b54fa308302a384167720aa1dbff1b5954d5fb0.png"
+                            alt="Денежный кредит"
+                        >
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- КАЛЬКУЛЯТОР -->
+        <section class="calculator">
+            <div>    
+                <h2 class="calculator__title">
+                    Калькулятор
+                </h2>
+
+                <!-- ВКЛАДКИ КАЛБКУЛЯТОРА -->
+                <nav class="calculator__tabs">
+                    <button
+                        class="calculator__tab calculator__tab--active"
+                        type="button"
+                    >
+                        Расчёт кредита
+                    </button>
+                    <button class="calculator__tab" type="button">
+                        Расчёт вклада
+                    </button>
+                </nav>
+            </div>
+
+            <!-- СОДЕРЖИМОЕ КАЛЬКУЛЯТОРА -->
+            <div class="calculator__content">
+                <section class="calculator__settings">
+                    <div class="credit__type">
+                        <label class="calculator__label" for="credit-type">
+                            Тип кредита
+                        </label>
+                        <select class="calculator__select" id="credit-type">
+                            <option>Бизнес займ</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+
+                    <!-- ВАЛЮТА -->
+                    <div class="currency">
+                        <h3 class="currency__title">
+                            Валюта
+                        </h3>
+                        <div class="currency__options">
+                            <div class="currency__option">
+                                <input
+                                    type="radio"
+                                    id="tjs"
+                                    name="currency"
+                                    value="tjs"
+                                    checked
+                                >
+                                <label for="tjs">Сомони</label>
+                            </div>
+
+                            <div class="currency__option">
+                                <input
+                                    type="radio"
+                                    id="rub"
+                                    name="currency"
+                                    value="rub"
+                                >
+                                <label for="rub">Рубль</label>
+                            </div>
+
+                            <div class="currency__option">
+                                <input
+                                    type="radio"
+                                    id="usd"
+                                    name="currency"
+                                    value="usd"
+                                >
+                                <label for="usd">Доллар</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="credit__details">
+                        <div class="credit__amount">
+                            <label for="credit-amount">Сумма кредита</label>
+                            <output>24</output>
+                            <input
+                                type="range"
+                                id="credit-amount"
+                                min="2"
+                                max="23694"
+                                value="24"
+                                step="1"
+                            >
+                            <div class="credit__range-labels">
+                                <span>от 2</span>
+                                <span>до 23694</span>
+                            </div>
+                        </div>
+
+                        <div class="credit__period">
+                            <label for="credit-period">Срок кредита (в месяцах)</label>
+                            <output>24</output>
+                            <input
+                                type="range"
+                                id="credit-period"
+                                min="2"
+                                max="23694"
+                                value="24"
+                                step="1"
+                            >
+                            <div class="credit__range-labels">
+                                <span>от 2</span>
+                                <span>до 23694</span>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+
+                <!-- РЕЗУЛЬТАТ КАЛЬКУЛЯТОРА -->
+                <section class="calculator__result">
+                    <div class="calculator__result-card">
+                        <div class="monthly__payment">
+                            <h3>Ежемесячный платеж</h3>
+                            <p>1 575 сомони</p>
+                        </div>
+                        <div class="percentage__rate">
+                            <h3>Процентная ставка</h3>
+                            <p style="color: #2F4B7F;">30% годовых</p>
+                        </div>
+                    </div>
+                    <form class="application">
+                        <div class="application__fields">
+                            <div class="application__field application__field--phone">
+                                <span class="application__prefix">+992</span>
+                                <input
+                                    class="application__input"
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Номер телефона"
+                                >
+                            </div>
+                            <div class="application__field">
+                                <input
+                                    class="application__input"
+                                    type="text"
+                                    id="full-name"
+                                    name="full-name"
+                                    placeholder="ФИО"
+                                >
+                            </div>
+
+                            <div class="application__upload">
+                                <label class="application__label" for="passport-front">
+                                    Лицевая сторона паспорта
+                                </label>
+
+                                <label class="application__file-label" for="passport-front">
+                                    <span>Загрузить файл</span>
+                                    <span class="application__file-icon">⬇</span>
+                                </label>
+
+                                <input
+                                    class="application__file-input"
+                                    type="file"
+                                    id="passport-front"
+                                    name="passport-front"
+                                    accept="image/*,.pdf"
+                                >
+                            </div>
+
+                            <div class="application__upload">
+                                <label class="application__label" for="passport-back">
+                                    Обратная сторона паспорта
+                                </label>
+
+                                <label class="application__file-label" for="passport-front">
+                                    <span>Загрузить файл</span>
+                                    <span class="application__file-icon">⬇</span>
+                                </label>
+
+                                <input
+                                    class="application__file-input"
+                                    type="file"
+                                    id="passport-back"
+                                    name="passport-back"
+                                    accept="image/*,.pdf"
+                                >
+                             </div>
+                        </div>
+                    </form>
+                    <button class="application__button" type="submit">
+                        Отправить заявку
+                    </button>    
+                </section>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
